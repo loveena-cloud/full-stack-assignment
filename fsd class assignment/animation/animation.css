@@ -1,0 +1,59 @@
+/*.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: move 3s infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      left: 50%;
+      top: 50%;
+    }
+    25% {
+      left: 75%;
+      top: 25%;
+    }
+    50% {
+      left: 25%;
+      top: 75%;
+    }
+    75% {
+      left: 75%;
+      top: 75%;
+    }
+    100% {
+      left: 50%;
+      top: 50%;
+    }
+  }
+  */
+  .bike {
+    width: 50%;
+    margin: 0 auto;
+    animation: bike 5s linear infinite;
+  }
+  
+  @keyframes bike {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20%, 20%); /* right and down*/ 
+    }
+    50% {
+      transform: translate(20%, 40%); /*adition down by 20%*/
+    }
+    75% {
+      transform: translate(-20%, 40%); /*back to left and 40*/
+    }
+    100% {
+      transform: translate(0, 0);
+
+      
+    }
+  }

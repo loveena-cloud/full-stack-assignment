@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header1>
+        <nav>
+            <div class="right" id="right">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="index1about.html">About</a></li>
+                    <li><a href="index1services.html">Services</a></li>
+                    <li><a href="index1projects.html">Projects</a></li>
+                    <li><a href="index1contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header1>
+
+    <div class="wrapper">
+        <!-- Your other content goes here -->
+
+        <!-- Contact Me Section -->
+        <section id="contact-me" style="margin-top: -20px; padding: 2rem;">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" value="8284809492" style="padding: 8px; margin-bottom: 16px; width: 100%; box-sizing: border-box;">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" value="loveena23012002@gmail.com" style="padding: 8px; margin-bottom: 16px; width: 100%; box-sizing: border-box;">
+
+                <label for="address">Address:</label>
+                <input type="adress" id="address" name="address" value="phase5 sector59 mohali chandigarh" style="padding: 8px; margin-bottom: 16px; width: 100%; box-sizing: border-box;"></textarea>
+
+               
+
+    </div>
+
+    <!-- Add your other scripts if needed -->
+
+    <script>
+        var right = document.getElementById("right");
+        function showMenu() {
+            right.style.right = "0";
+        }
+        function hideMenu() {
+            right.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

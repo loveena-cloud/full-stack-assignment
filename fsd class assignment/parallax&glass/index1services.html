@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header1>
+        <nav>
+        
+            <div class="right" id="right">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            
+<ul>
+    <li><a href="index1.html">Home</a></li>
+    <li><a href="index1about.html">About</a></li> <!-- Updated link to the about page -->
+    <li><a href="index1services.html">Services</a></li>
+    <li><a href="index1projects.html">Projects</a></li>
+    <li><a href="index1contact.html">Contact Me</a></li>
+</ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header1>
+
+    <div class="wrapper">
+        
+            <img src="water.jpg" class="background">
+          <div>
+            <h1 class="title">I am Loveena chandel</h1>
+          </div>
+        
+        <!-- Inside the <section> in index1about.html -->
+
+<!-- Inside the <section> in index1about.html -->
+    <section class="photo"  style="margin-top: -20px; padding: 2rem;">
+        <h2>I am a software developer</h2>
+        <p>
+            Hello! I'm Loveena, a dedicated software developer with a passion for turning ideas into functional and innovative solutions. My skills include:
+        </p>
+        <p>HTML, CSS, JavaScript for web development.</p>
+        <p>Database Management System (DBMS) and SQL.</p>
+        <p>Python for versatile programming solutions.</p>
+        <p>Core Java for robust backend development.</p>
+        <p>
+            Let's collaborate for innovative software solutions!
+        </p>
+    </section>
+     </div>
+
+
+    <script>
+        var right = document.getElementById("right");
+        function showMenu(){
+            right.style.right = "0";
+        }
+        function hideMenu(){
+            right.style.right = "-200px";
+
+        }
+    </script>
+</body>
+</html>

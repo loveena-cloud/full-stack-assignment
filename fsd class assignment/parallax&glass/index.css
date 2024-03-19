@@ -1,0 +1,199 @@
+
+    body{
+        margin: 8;
+        padding: 9;
+        text-align: center;
+         }
+
+   nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 60px;
+    background-color: rgb(68, 184, 199);
+    position: relative;
+   }
+   nav ul{
+    display: flex;
+
+   }
+   nav ul li{
+    align-items: left;
+    list-style: none;
+    margin: 0 23px;
+    font-size: 2rem;
+   } 
+   li{
+    color: transparent;
+    -webkit-text-stroke: 3px rgb(240, 236, 228);
+    position: relative;
+   }
+   li::before{
+    content: "Hover";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: rgb(196, 69, 158);
+    transition: 1s ease-in;
+  }
+  li:hover{
+    width: 100%;
+    filter: drop-shadow(0 0 25px rgb(155, 17, 74));
+  }
+
+
+
+      
+
+.wrapper{
+    
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px; /*gives an element 3d effect by affecting distance between z plane and user*/
+
+}
+header{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-3px) scale(2); /*our prespective is 10px away so here we gave -10px which tells thats backgrnd is twice far away from us than actual screen*/
+
+}
+.foreground{
+    transform: translateZ(-5px) scale(1.5); 
+
+}
+
+.background,
+.foreground{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1; /* allow hidden text to look out*/
+}
+
+
+.title {
+    font-size: 2%;
+    text-align: center;
+    align-items: center;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 white;
+}
+
+h1{ 
+    
+    color: transparent;
+    
+    position: relative;
+}
+h1::before{
+    content: "Hover";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    
+    
+    transition: 1s ease-in-out;
+}
+h1:hover{
+    width: 100%;
+    filter: drop-shadow(0 0 25px rgb(255, 255, 255));
+}
+.photo {
+    font-size: 1.2rem;
+    padding: 5rem;
+    background-color: rgba(45, 193, 219, 0.5);
+    color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
+}
+
+.photo:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: -1;
+}
+
+.photo:before {
+    filter: blur(10px);
+}
+
+
+
+/*  footer    */
+
+
+/* Styles for the pink box */
+.footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    background-image: url(/pink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 182, 193, 0.5); /* Pink with transparency */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px); /* Apply a blur effect to the pseudo-element */
+    z-index: -1;
+}
+
+/* Optional: Add a subtle box shadow */
+.footer:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    z-index: -2;
+}
+
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* SERVICES*/
+/* Inside the <style> tag in your main CSS file (index.css) */
+#developer-section p {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
