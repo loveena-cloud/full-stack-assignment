@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="sec" id='sec'>
+    <h1>Dogs</h1>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Lebra</h3>
+                <div class="laptop" height="300px;">
+                    <img src="/pug.jpg">
+                </div>
+                <a href="#" class="read-more-btn" data-popup="popup1">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>pomeranian</h3>
+                <div class="smartphone">
+                    <img src="/p.jpg" height="300px;">
+                </div>
+                <a href="#" class="read-more-btn" data-popup="popup2">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Retriver</h3>
+                <div class="camera">
+                    <img src="/goldi.jpg" height="300px;">
+                </div>
+                <a href="#" class="read-more-btn" data-popup="popup3">Read More</a>
+            </div>
+        </div>
+       
+       
+
+        <!-- Popups -->
+        <div class="popup" id="popup1">
+            <div class="popup-content">
+                <h2>Lebra</h2>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Origin</th>
+                            <th>Color</th>
+                            <th>price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>India</td>
+                            <td>black</td>
+                            <td>5,000</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup2">
+            <div class="popup-content">
+                <h2>pomeranian </h2>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Origin</th>
+                            <th>Color</th>
+                            <th>price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>India</td>
+                            <td>white</td>
+                            <td>8,000</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup3">
+            <div class="popup-content">
+                <h2>Retriver</h2>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Origin</th>
+                            <th>Color</th>
+                            <th>life</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>India</td>
+                            <td>golden</td>
+                            <td>12,000</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+
+        
+<script>
+    // JavaScript for opening and closing the popup
+    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+    const closeBtns = document.querySelectorAll('.close-btn');
+
+    readMoreBtns.forEach((btn) => {
+        btn.onclick = function(e) {
+            e.preventDefault();
+            const popupId = this.getAttribute('data-popup');
+            const popup = document.getElementById(popupId);
+            popup.style.display = 'block';
+        };
+    });
+
+    closeBtns.forEach((btn) => {
+        btn.onclick = function() {
+            const popup = this.closest('.popup');
+            popup.style.display = 'none';
+        };
+    });
+</script>
+
+</body>
