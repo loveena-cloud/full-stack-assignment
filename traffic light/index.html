@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    
+        <div class="first">
+            <h1>Loveena</h1>
+            <h4> P06</h4>
+            <h4>8284809492</h4>
+            <h4> loveenachandel@gmail.com</h4>
+        </div>
+    
+    <div id="container">
+        <div id="light-box">
+          <div class="light" id="red-light"></div>
+          <div class="light" id="green-light"></div>
+          <div class="light" id="yellow-light"></div>
+        </div>
+        <div id="button-box">
+          <button id="red-btn">Red</button>
+          <button id="green-btn">Green</button>
+          <button id="yellow-btn">Yellow</button>
+          <button id="all-btn">All</button>
+          <button id="alt-btn">Alt</button>
+        </div>
+      </div>
+    
+      <Script>
+        var redLight = document.getElementById("red-light");
+        var yellowLight = document.getElementById("yellow-light");
+        var greenLight = document.getElementById("green-light");
+    
+        var redButton = document.getElementById("red-btn");
+        var greenButton = document.getElementById("green-btn");
+        var yellowButton = document.getElementById("yellow-btn");
+        var allButton = document.getElementById("all-btn");
+        var altButton = document.getElementById("alt-btn");
+    
+        function toggleLights(light) {
+          redLight.style.backgroundColor = "";
+          yellowLight.style.backgroundColor = "";
+          greenLight.style.backgroundColor = "";
+          redButton.style.backgroundColor = "";
+          yellowButton.style.backgroundColor = "";
+          greenButton.style.backgroundColor = "";
+    
+          if (light === 'red') {
+            redLight.style.backgroundColor = "#ff6347";
+            redButton.style.backgroundColor = "#ff6347";
+          } else if (light === 'yellow') {
+            yellowLight.style.backgroundColor = "#ffd700";
+            yellowButton.style.backgroundColor = "#ffd700";
+          } else if (light === 'green') {
+            greenLight.style.backgroundColor = "#3cb371";
+            greenButton.style.backgroundColor = "#3cb371";
+          } else if (light === 'all') {
+            redLight.style.backgroundColor = "#ff6347";
+            yellowLight.style.backgroundColor = "#ffd700";
+            greenLight.style.backgroundColor = "#3cb371";
+            redButton.style.backgroundColor = "#ff6347";
+            yellowButton.style.backgroundColor = "#ffd700";
+            greenButton.style.backgroundColor = "#3cb371";
+          }
+        }
+    
+        function altLights() {
+          var lights = ['red', 'green', 'yellow'];
+          var i = 0;
+          var intervalId = setInterval(function() {
+            toggleLights(lights[i]);
+            i = (i + 1) % lights.length;
+          }, 1000);
+    
+          // No need for setTimeout to stop interval
+        }
+    
+        redButton.addEventListener("click", function() {
+          toggleLights('red');
+        });
+    
+        greenButton.addEventListener("click", function() {
+          toggleLights('green');
+        });
+    
+        yellowButton.addEventListener("click", function() {
+          toggleLights('yellow');
+        });
+    
+        allButton.addEventListener("click", function() {
+          toggleLights('all');
+        });
+    
+        altButton.addEventListener("click", function() {
+          altLights();
+        });
+        </Script>
+
+    
+</body>
+</html>

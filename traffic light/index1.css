@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.head h2 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.lights {
+    display: flex;
+    gap: 10px;
+    background-color: #a0e7f3; 
+    padding: 7px 2px;
+    border-radius: 30px;
+}
+
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #fff;
+}
+
+#red:checked~.lights .red {
+    background-color: red;
+}
+
+#yellow:checked~.lights .yellow {
+    background-color: yellow;
+}
+
+#green:checked~.lights .green {
+    background-color: green;
+}
+
+#all:checked~.lights .red {
+    background-color: red;
+}
+
+#all:checked~.lights .yellow {
+    background-color: yellow;
+}
+
+#all:checked~.lights .green {
+    background-color: green;
+}
+
+#reset:checked~.lights .light {
+    background-color: #b9b2b2;
+}
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button-container label {
+    border: 2px solid rgb(245, 241, 243);
+    background-color: rgb(245, 241, 244);
+    border-radius: 20px;
+    text-align: center;
+    width: 130px;
+    height: 50px;
+    margin: 3px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+
+#red:checked~.button-container label[for="red"] {
+    border: 2px solid red;
+    background-color: red;
+}
+
+#yellow:checked~.button-container label[for="yellow"] {
+    border: 2px solid yellow;
+    background-color: yellow;
+}
+
+
+#green:checked~.button-container label[for="green"] {
+    border: 2px solid green;
+    background-color: green;
+}
+
+
+#all:checked~.button-container label[for="all"] {
+    border: 2px solid rgb(204, 200, 200);
+    background-color: rgb(175, 170, 170);
+}
+
+#all:checked~.button-container label[for="red"] {
+    border: 2px solid red;
+    background-color: red;
+}
+
+#all:checked~.button-container label[for="yellow"] {
+    border: 2px solid  yellow;
+    background-color:  yellow;
+}
+
+#all:checked~.button-container label[for="green"] {
+    border: 2px solid green;
+    background-color: green;
+}
+
+
+
+#alt:checked ~ .button-container label[for="alt"] {
+    animation: alt-btn-animation 6s infinite;
+}
+
+@keyframes alt-btn-animation {
+    0%, 100% {
+        background-color: red;
+        border: 2px solid red;
+    }
+
+    33% {
+        background-color: yellow;
+        border: 2px solid yellow;
+    }
+
+    66% {
+        background-color: green;
+        border: 2px solid green;
+    }
+}
+
+
+#alt:checked ~ .lights .red {
+    animation: alt-light1-animation 6s infinite;
+}
+
+#alt:checked ~ .lights .yellow {
+    animation: alt-light2-animation 6s infinite;
+}
+
+#alt:checked ~ .lights .green {
+    animation: alt-light3-animation 6s infinite;
+}
+
+@keyframes alt-light1-animation {
+    0%, 100% {
+        background-color: red;
+    }
+
+    33% {
+        background-color: #fff;
+    }
+
+    66% {
+        background-color: #fff;
+    }
+}
+
+@keyframes alt-light2-animation {
+    0%, 66% {
+        background-color: #fff;
+    }
+
+    33% {
+        background-color: yellow;
+    }
+}
+
+@keyframes alt-light3-animation {
+    0%, 66% {
+        background-color: #fff;
+    }
+
+    66% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: #fff;
+    }
+}
