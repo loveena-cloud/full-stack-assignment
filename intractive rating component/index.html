@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="index.css" />
+   
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="oval-star">
+        <img class="star" src="./Path (3).png" />
+      </div>
+      <h2>How was our services?</h2>
+      <p class="support">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="number-container">
+        <div class="oval-number">1</div>
+        <div class="oval-number">2</div>
+        <div class="oval-number">3</div>
+        <div class="oval-number">4</div>
+        <div class="oval-number">5</div>
+      </div>
+      <button class="button">SUBMIT</button>
+    </div>
+    <div class="main-container2">
+      <img class="picture" src="./Online payment_Two Color(1).png" />
+      <div class="select">You selected 0 out of 0</div>
+      <h3>Thank you!</h3>
+      <p class="support1">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+    <script>
+      const firstcontainer = document.querySelector(".main-container");
+const secondcontainer = document.querySelector(".main-container2");
+const button = document.querySelector(".button");
+const numbers = document.querySelectorAll(".oval-number");
+const select = document.querySelector(".select");
+
+button.addEventListener("click", () => {
+  firstcontainer.style.display = "none";
+  secondcontainer.style.display = "flex";
+});
+
+for (let i = 0; i < numbers.length; i++) {
+  numbers[i].addEventListener("click", () => {
+    if (numbers[i].classList.contains("open")) {
+      numbers[i].style.backgroundColor = "";
+      numbers[i].style.color = "";
+      numbers[i].classList = "oval-number";
+    } else {
+      numbers[i].style.backgroundColor = "#7C8798";
+      numbers[i].style.color = "#ffff";
+      select.textContent =
+        "You selected " + numbers[i].textContent + " out of 5";
+      numbers[i].classList = "open";
+    }
+    for (let k = 0; k < numbers.length; k++) {
+      if (numbers[k].classList.contains("open") && numbers[k] !== numbers[i]) {
+        numbers[k].style.backgroundColor = "";
+        numbers[k].style.color = "";
+        numbers[k].classList = "oval-number";
+      }
+    }
+  });
+}
+    </script>
+  </body>
+</html>
