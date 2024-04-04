@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Created by www.codingpakistan.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials Slider using Html Css & Swiper Js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+
+<body>
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">What our clients say</h2>
+            </div>
+            <div class="testimonials-content">
+                <div class="swiper testimonials-slider js-testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                            <img src="pic 1.png">
+                            <div class="text-box">
+                                <h3 class="name">Rohit rajput </h3>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis commodi nihil
+                                consectetur praesentium distinctio repellendus doloremque nulla assumenda modi?</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                            <img src="pic 2.png">
+                            <div class="text-box">
+                                <h3 class="name">Dillip dhillon</h3>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis commodi nihil
+                                consectetur praesentium distinctio repellendus doloremque nulla assumenda modi?</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                            <img src="pic 3.png">
+                            <div class="text-box">
+                                <h3 class="name">Rahul</h3>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis commodi nihil
+                                consectetur praesentium distinctio repellendus doloremque nulla assumenda modi?</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                            <img src="pic 4.png">
+                            <div class="text-box">
+                                <h3 class="name">Jiya singh</h3>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis commodi nihil
+                                consectetur praesentium distinctio repellendus doloremque nulla assumenda modi?</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                            <img src="pic 5.png">
+                            <div class="text-box">
+                                <h3 class="name">simran chauhan</h3>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis commodi nihil
+                                consectetur praesentium distinctio repellendus doloremque nulla assumenda modi?</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination js-testimonials-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween:30,
+            pagination:{
+                el: '.js-testimonials-pagination',
+                clickable:true
+            },
+            breakpoints:{
+                767:{
+                    slidesPerView: 2
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
