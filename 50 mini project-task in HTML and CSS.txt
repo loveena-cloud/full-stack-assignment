@@ -51,7 +51,7 @@ DONE 13. Responsive Card Layout
 Description: Design a card layout that adapts to different screen sizes.
 Key Features: Grid system, hover effects, image and text sections.
 
-14. Testimonials Slider
+DONE 14. Testimonials Slider
 Description: Build a slider to showcase client or customer testimonials.
 Key Features: Auto-slide or arrow navigation, avatar, quotes.
 
