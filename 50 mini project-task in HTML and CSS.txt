@@ -155,7 +155,7 @@ Key Features: Image zoom, product details, add to cart button, close modal funct
 Description: A grid layout for images or items that optimizes space by varying item height.
 Key Features: Column-based layout, dynamic resizing, hover effects for image details.
 
- 40. Flip Card Effect
+  DONE 40. Flip Card Effect
 Description: Cards that flip on hover or click to reveal more information.
 Key Features: 3D flip animation, front and back content, shadow effects.
 
