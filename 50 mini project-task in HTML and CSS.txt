@@ -1,10 +1,10 @@
 50 mini projects/tasks in HTML and CSS
 
-1. Personal Portfolio Website
+ DONE 1. Personal Portfolio Website
 Description: Design a website to showcase your work, skills, and bio.
 Key Features: About section, project gallery, contact form.
 
-2. Responsive Navigation Menu
+DONE 2. Responsive Navigation Menu
 Description: Create a multi-level dropdown navigation menu that is responsive.
 Key Features: Hamburger menu on mobile, multi-level dropdowns, smooth animations.
 
@@ -16,39 +16,38 @@ Key Features: Article layout, comment section, sidebar with categories.
 Description: Build an image gallery with a lightbox feature.
 Key Features: Grid layout, modal view of images, previous and next navigation.
 
-5. CSS Animated Loader
+DONE 5. CSS Animated Loader
 Description: Design various animated loading icons using pure CSS.
 Key Features: Spinners, bars, dots, custom animations.
 
-6. Landing Page for a Product
+DONE 6. Landing Page for a Product
 Description: Create a captivating landing page for a fictional product.
 Key Features: Hero section, features, testimonials, call-to-action.
 
-7. Event Countdown Timer
+DONE 7. Event Countdown Timer
 Description: Build a countdown timer for an upcoming event.
 Key Features: Days, hours, minutes, seconds countdown, event details.
 
-8. FAQ Accordion
+DONE 8. FAQ Accordion
 Description: Develop an FAQ section where answers expand/collapse.
 Key Features: Accordion-style toggle, plus/minus icons, smooth animations.
 
-9. Parallax Scrolling Website
+DONE 9. Parallax Scrolling Website
 Description: Create a website that demonstrates the parallax scrolling effect.
 Key Features: Parallax backgrounds, smooth scrolling, layered images.
 
 10. Pricing Table
 Description: Design a responsive pricing table for service comparisons.
 Key Features: Multiple plans, feature checkmarks, highlight best value.
-
-11. Animated Navigation Bar
+DONE 11. Animated Navigation Bar
 Description: Build a navigation bar with animated underline effects.
 Key Features: Hover animations, active state indication, responsive design.
 
-12. Modal Popup
+DONE 12. Modal Popup
 Description: Create a modal popup for signups, ads, or notifications.
 Key Features: Overlay background, close button, form or message content.
 
-13. Responsive Card Layout
+DONE 13. Responsive Card Layout
 Description: Design a card layout that adapts to different screen sizes.
 Key Features: Grid system, hover effects, image and text sections.
 
@@ -64,7 +63,7 @@ Key Features: Input fields, text area, submit button, form validation.
 Description: Design a collection of buttons with hover and click animations.
 - Key Features: Color change, size, border, and shadow animations.
 
- 17. Hero Section Design
+ DONE 17. Hero Section Design
 - Description: Create an engaging hero section for a homepage.
 - Key Features: Full-screen background, headline, call-to-action.
 
@@ -76,7 +75,7 @@ Description: Design a collection of buttons with hover and click animations.
 - Description: Implement a header that becomes sticky upon scrolling.
 - Key Features: Change in background or size on scroll, logo, navigation links.
 
- 20. Footer Design
+ DONE 20. Footer Design
 - Description: Build a comprehensive footer for a website.
 - Key Features: Contact info, navigation links, social media icons, copyright notice.
 
@@ -108,7 +107,7 @@ Key Features: Profile photos, names, titles, social links, hover effects.
 Description: A progress bar that indicates how much of a page has been scrolled.
 Key Features: Progress bar fixed at top or side, dynamic width or height change as the user scrolls.
 
- 28. Collapsible Sidebar Menu
+DONE  28. Collapsible Sidebar Menu
 Description: A sidebar navigation menu that can expand or collapse.
 Key Features: Menu icon toggle, smooth transition animations, nested list items.
 
