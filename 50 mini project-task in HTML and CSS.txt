@@ -12,7 +12,7 @@ Key Features: Hamburger menu on mobile, multi-level dropdowns, smooth animations
 Description: Design a template for blog posts and a blog homepage.
 Key Features: Article layout, comment section, sidebar with categories.
 
-4. Image Gallery
+ DONE 4. Image Gallery
 Description: Build an image gallery with a lightbox feature.
 Key Features: Grid layout, modal view of images, previous and next navigation.
 
