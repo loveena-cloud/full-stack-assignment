@@ -59,7 +59,7 @@ DONE 15. Contact Form
 Description: Create a stylish contact form with validation.
 Key Features: Input fields, text area, submit button, form validation.
 
-16. Animated Buttons
+DONE 16. Animated Buttons
 Description: Design a collection of buttons with hover and click animations.
 - Key Features: Color change, size, border, and shadow animations.
 
