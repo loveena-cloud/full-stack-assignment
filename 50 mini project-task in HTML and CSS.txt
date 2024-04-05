@@ -67,7 +67,7 @@ Description: Design a collection of buttons with hover and click animations.
 - Description: Create an engaging hero section for a homepage.
 - Key Features: Full-screen background, headline, call-to-action.
 
- 18. Social Media Icons
+ DONE 18. Social Media Icons
 - Description: Design animated social media icon links.
 - Key Features: Hover effects, brand colors, icons for major social networks.
 
