@@ -36,7 +36,7 @@ DONE 9. Parallax Scrolling Website
 Description: Create a website that demonstrates the parallax scrolling effect.
 Key Features: Parallax backgrounds, smooth scrolling, layered images.
 
-10. Pricing Table
+DONE 10. Pricing Table
 Description: Design a responsive pricing table for service comparisons.
 Key Features: Multiple plans, feature checkmarks, highlight best value.
 DONE 11. Animated Navigation Bar
