@@ -87,7 +87,7 @@ Key Features: Use of icons for weather conditions, temperature display, possibly
 Description: Design a standalone page for users to sign up for a newsletter.
 Key Features: Email input field, GDPR compliance checkbox, submit button.
 
- 23. Animated Backgrounds
+ DONE 23. Animated Backgrounds
 Description: Create backgrounds with subtle animations for web pages.
 Key Features: Gradient animations, moving patterns, interactive mouse-following effects.
 
