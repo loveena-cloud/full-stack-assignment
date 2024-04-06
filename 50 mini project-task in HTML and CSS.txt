@@ -71,7 +71,7 @@ Description: Design a collection of buttons with hover and click animations.
 - Description: Design animated social media icon links.
 - Key Features: Hover effects, brand colors, icons for major social networks.
 
- 19. Sticky Header on Scroll
+ DONE 19. Sticky Header on Scroll
 - Description: Implement a header that becomes sticky upon scrolling.
 - Key Features: Change in background or size on scroll, logo, navigation links.
 
