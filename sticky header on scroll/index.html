@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Header with Background Image</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #d44694;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+  }
+  .content {
+  padding-top: 60px; 
+  height: 1500px; 
+  background-image: url('/sky.jpg');
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  z-index: 1; 
+}
+
+.content-text {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  color: #fc5454;
+  margin-left: 500px;
+}
+  
+ 
+  .header.sticky {
+    top: -50px; /
+  }
+</style>
+</head>
+<body>
+
+<div class="header" id="myHeader">
+  <h2>LOVEENA CHANDEL</h2>
+</div>
+
+<div class="content">
+  <div class="content-text">
+    <h1>STICKY HEADER</h1>
+    <p>Scroll down to see the sticky effect.</p>
+  </div>
+</div>
+
+</body>
+</html>
