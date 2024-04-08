@@ -176,7 +176,7 @@ Key Features: Circular shape, shadow effect, fixed position on scroll.
 Description: A complex photo board layout using CSS Grid.
 Key Features: Overlapping images, text overlays, varying column and row sizes.
 
-45. Interactive Rating Component
+DONE 45. Interactive Rating Component
 Description: A component for users to rate products, services, or content.
 Key Features: Star icons, hover and click interactions, dynamic display of selected rating.
 
